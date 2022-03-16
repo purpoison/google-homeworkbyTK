@@ -1,0 +1,119 @@
+body{
+	font-family: arial;
+}
+
+.logo-header img{
+	float: left;
+	width: 5%;
+}
+
+.menu{
+	text-align: right;
+	margin-top: 20px;
+	margin-left: 20px;
+
+}
+.menu a{
+	text-decoration: none;
+	padding: 5px;
+	color: #000;
+	margin: 5px;
+	color: #444647;
+
+}
+.menu a:hover{
+	text-decoration: underline;
+}
+.container{
+	text-align: center;
+	padding-top: 100px;
+}
+
+.search-heading p{
+	margin-top: 40px;
+	text-align: left;
+	padding-left: 60px;
+	color: #CA270E;
+	font-size: 20px;
+}
+
+.logo img{
+	width: 25%;
+	margin-bottom: 30px;
+}
+.border{
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.wrap{
+	padding-left: 40px;
+	padding-top: 20px;
+}
+.wrap p{
+	text-align: left;
+	margin-bottom: 30px;
+}
+.search-input{
+	width: 40%;
+	border-radius: 25px;
+	-webkit-appearance: none;
+	padding: 15px;
+	border: 1px solid #ccc;
+	font-size: 100%;
+/*	background: no-repeat left contain url("../images/glass.png");
+*/}
+.search-input:focus{
+	outline: none;
+}
+.search-input:hover{
+	-webkit-box-shadow: 1px 7px 20px -10px rgba(34, 60, 80, 0.2); 
+	-moz-box-shadow: 1px 7px 20px -10px rgba(34, 60, 80, 0.2); 
+	box-shadow: 1px 7px 20px -10px rgba(34, 60, 80, 0.2);
+}
+.search-table td{
+	padding-right: 40px;
+	padding-bottom: 15px;
+	font-size: 90%;
+}
+.search-table input{
+	border: 1px solid #ccc;
+	width: 200%;
+	font-size: 20px;
+}
+.wide-input{
+
+}
+
+.submit-button{
+    margin-top: 10px;
+}
+.button-style{
+    width: 15%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    font-size: 100%;
+    border: none;
+    color: #444647;
+    background-color: #f7f7f7;
+}
+.button-style:hover{
+	outline: 1px solid #ccc;
+}
+.wide-button-style{
+	width: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 100%;
+    border: 1px solid #2c6bc9;
+    color: #fff;
+    background-color: #2a77eb;
+    border-radius: 3px;
+}
+.wide-button-style:hover{
+	background: linear-gradient(to bottom, #2d65ba 3%, #306fcf 94%);
+	border: 1px solid #2658a3;
+}
+.wide-submit{
+	text-align: center;
+}
