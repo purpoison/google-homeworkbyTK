@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Search</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <a href="google.html" class="logo-header">
+                    <img src="images/Google.png" alt="">
+                </a>
+                <a href="google.html">Пошук Google</a>
+                <a href="image-google.html">Пошук зображень Google</a>
+            </div> 
+        </header>
+        <div class="search-heading">
+             <p> Розширений пошук</p>
+             <div class="border"></div>
+        </div>
+        <div class="wrap">
+            <p>Знайти сторінки</p>
+            <form action="https://google.com/search">
+               <table class="search-table">
+                   <tbody>
+                       <tr>
+                           <td>з усіма цими словами:</td>
+                           <td> <input type="text" name="as_q" class="wide-input"></td>
+                       </tr>
+                       <tr>
+                           <td>з саме цим словом або фразою:</td>
+                           <td> <input type="text" name="as_epq" class="wide-input" value></td>
+                           <input type="hidden" name="">
+                       </tr>
+                        <tr>
+                           <td>з будь-яким із цих слів:</td>
+                           <td> <input type="text" name="as_oq" class="wide-input" value></td>
+                       </tr>
+                       <tr>
+                           <td>жодне з цих слів:</td>
+                           <td> <input type="text" name="as_eq" class="wide-input" value></td>
+                       </tr>
+                   </tbody>
+               </table>
+                <div class="submit-button wide-submit">
+                    <input type="submit" value="Пошук" class="wide-button-style">
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>
