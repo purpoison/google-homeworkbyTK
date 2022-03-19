@@ -159,13 +159,31 @@ body{
 		margin: 5px auto;
 	}
 }
-@media only screen and (min-width : 480px) {
+@media only screen and (max-width: 480px){
+	.container{
+		padding-top: 50px;
+	}
+	.logo img{
+		width: 80%;
+	}
 	.menu{
+		flex-direction: column;
+		margin-left: 0;
+		margin-top: 40px;
 		font-size: 35px;
 		justify-content: space-between;
 	}
+	.menu a{
+		text-align: center;
+		display: inline-block;
+		width: 200px;
+		margin: 5px auto;
+	}
 	.button-style{
 		font-size: 30px;
+	}
+	.submit-button{
+		margin-top: 45px;
 	}
 	.submit-button{
 		margin-top: 45px;
