@@ -8,7 +8,8 @@ body{
 }
 
 .menu{
-	text-align: right;
+	display: flex;
+	justify-content: flex-end;
 	margin-top: 20px;
 	margin-left: 20px;
 
@@ -87,9 +88,7 @@ body{
     margin-top: 10px;
 }
 .button-style{
-    width: 15%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+	padding: 15px;
     cursor: pointer;
     font-size: 100%;
     border: none;
@@ -116,4 +115,47 @@ body{
 }
 .wide-submit{
 	text-align: center;
+}
+@media (max-width: 1200px){
+	.logo img{
+		width: 50%;
+	}
+	.search-input{
+		width: 60%;
+	}
+}
+@media (max-width: 800px){
+	.logo img{
+		width: 60%;
+		margin-bottom: 5px;
+	}
+	.search-input{
+		width: 60%;
+	}
+	.logo{
+		padding-top: 20px;
+	}
+	.submit-button{
+		margin-top: 25px;
+	}
+}
+@media (max-width: 450px){
+	.container{
+		padding-top: 50px;
+	}
+	.logo img{
+		width: 80%;
+	}
+	.menu{
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 0;
+		margin-top: 40px;
+	}
+	.menu a{
+		text-align: center;
+		display: inline-block;
+		width: 200px;
+		margin: 5px auto;
+	}
 }
