@@ -1,12 +1,18 @@
-body{
+html, body{
 	font-family: arial;
+	/* height: 100%; */
 }
-
+.wrapper{
+	width: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+}
 .logo-header img{
 	float: left;
 	width: 5%;
 }
-
 .menu{
 	display: flex;
 	justify-content: flex-end;
@@ -20,16 +26,19 @@ body{
 	color: #000;
 	margin: 5px;
 	color: #444647;
-
 }
 .menu a:hover{
 	text-decoration: underline;
 }
 .container{
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 80px;
+	width: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-
 .search-heading p{
 	margin-top: 40px;
 	text-align: left;
@@ -37,7 +46,6 @@ body{
 	color: #CA270E;
 	font-size: 20px;
 }
-
 .logo img{
 	width: 25%;
 	margin-bottom: 30px;
@@ -53,19 +61,37 @@ body{
 	text-align: left;
 	margin-bottom: 30px;
 }
-.search-input{
+.glass-icon{
+	margin: 0 auto;
 	width: 40%;
+	border: 1px solid #ccc;
 	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-input{
+	width: 80%;
+	border: none;
+	/* border: 1px solid red; */
 	-webkit-appearance: none;
 	padding: 15px;
-	border: 1px solid #ccc;
 	font-size: 100%;
-/*	background: no-repeat left contain url("../images/glass.png");
-*/}
+}
+.icon-search{
+	display: inline-block;
+	background-image: url("../images/glass.png");
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	background-size: auto 90%;
+	margin-left: 10px;
+	margin-top: 2px;
+}
 .search-input:focus{
 	outline: none;
 }
-.search-input:hover{
+.glass-icon:hover{
 	-webkit-box-shadow: 1px 7px 20px -10px rgba(34, 60, 80, 0.2); 
 	-moz-box-shadow: 1px 7px 20px -10px rgba(34, 60, 80, 0.2); 
 	box-shadow: 1px 7px 20px -10px rgba(34, 60, 80, 0.2);
@@ -83,14 +109,13 @@ body{
 .wide-input{
 
 }
-
 .submit-button{
     margin-top: 10px;
 }
 .button-style{
 	padding: 15px;
     cursor: pointer;
-    font-size: 100%;
+    font-size: 17px;
     border: none;
     color: #444647;
     background-color: #f7f7f7;
@@ -116,7 +141,7 @@ body{
 .wide-submit{
 	text-align: center;
 }
-@media (max-width: 1200px){
+/* @media (max-width: 1200px){
 	.logo img{
 		width: 50%;
 	}
@@ -138,62 +163,57 @@ body{
 	.submit-button{
 		margin-top: 25px;
 	}
-}
-@media (max-width: 450px){
+} */
+@media only screen and (max-width: 768px){
 	.container{
-		padding-top: 50px;
+		padding-top: 70px;
 	}
 	.logo img{
 		width: 80%;
 	}
 	.menu{
-		flex-direction: column;
-		justify-content: center;
-		margin-left: 0;
+		margin-left: 0px;
 		margin-top: 40px;
+		align-items: center;
 	}
 	.menu a{
 		text-align: center;
 		display: inline-block;
 		width: 200px;
 		margin: 5px auto;
-	}
-}
-@media only screen and (max-width: 480px){
-	.container{
-		padding-top: 50px;
-	}
-	.logo img{
-		width: 80%;
-	}
-	.menu{
-		flex-direction: column;
-		margin-left: 0;
-		margin-top: 40px;
-		font-size: 35px;
-		justify-content: space-between;
-	}
-	.menu a{
-		text-align: center;
-		display: inline-block;
-		width: 200px;
-		margin: 5px auto;
+		font-size: 25px;
 	}
 	.button-style{
 		font-size: 30px;
+		margin-bottom: 20px;
 	}
 	.submit-button{
 		margin-top: 45px;
 	}
 	.submit-button{
 		margin-top: 45px;
-	}
-	.container{
-		padding-top: 170px;
 	}
 	.search-input{
 		font-size: 40px;
 		border-radius: 40px;
-		width: 80%;
 	}
-}
+	.glass-icon{
+		width: 90%;
+	}
+	.search-heading p{
+		text-align: center;
+		font-size: 30px;
+	}
+	a[class=logo-header]{
+		display: none;
+	}
+	.search-table input{
+		width: auto;
+	}
+	.search-table td{
+		padding-right: 13px	;
+	}
+	.wide-button-style {
+		width: 50%;
+	}
+}	
