@@ -3,26 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <title>Search</title>
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
-            <div class="menu">
-                <a href="image-google.html">Пошук зображень Google</a>
-                <a href="wide-sarch.html">Розширений пошук Google</a>
-            </div> 
-        </header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/Google.png" alt="">
-            </div>
-            <form action="https://google.com/search">
-                <input type="text" name="q" class="search-input">
-                <div class="submit-button">
-                    <input type="submit" name="btnK" value="Google Search" class="button-style">
-                    <input type="submit" name="btnI" value="Мені пощастить" class="button-style">
+        <div class="wrapper">
+            <header>
+                <div class="menu">
+                    <a href="image-google.html">Пошук зображень Google</a>
+                    <a href="wide-sarch.html">Розширений пошук Google</a>
+                </div> 
+            </header>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/Google.png" alt="">
                 </div>
-            </form>
+                <form action="https://google.com/search">
+                    <div class="glass-icon">
+                        <div class="icon-search"></div>
+                        <input type="text" name="q" value class="search-input">
+                    </div>
+                    <div class="submit-button">
+                        <input type="submit" name="btnK" value="Google Search" class="button-style">
+                        <input type="submit" name="btnI" value="Мені пощастить" class="button-style">
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>
