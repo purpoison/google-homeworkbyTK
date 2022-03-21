@@ -204,8 +204,8 @@ html, body{
 		text-align: center;
 		font-size: 30px;
 	}
-	a[class=logo-header]{
-		display: none;
+		a[class=logo-header] img{
+		width: 90%;
 	}
 	.search-table input{
 		width: auto;
@@ -215,5 +215,18 @@ html, body{
 	}
 	.wide-button-style {
 		width: 50%;
+	}
+	.search-heading p{
+		padding-left: 0;
+	}
+	.wide-submit{
+		margin-top: 25px;
+	}
+	.wide-button-style{
+		width: 80%;
+	}
+	.wide-wrap{
+		margin-left: 15px;
+		padding-left: 0;
 	}
 }	
