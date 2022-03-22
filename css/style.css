@@ -141,6 +141,20 @@ html, body{
 .wide-submit{
 	text-align: center;
 }
+.for-mobile input{
+	border: 1px solid #ccc;
+	width: 90%;
+	font-size: 20px;
+}
+p[class=mobile-p]{
+	margin-bottom: 10px;
+}
+.for-mobile input:last-child{
+	margin-bottom: 30px;
+}
+.for-mobile{
+	display: none;
+}
 /* @media (max-width: 1200px){
 	.logo img{
 		width: 50%;
@@ -207,11 +221,8 @@ html, body{
 		a[class=logo-header] img{
 		width: 90%;
 	}
-	.search-table input{
-		width: auto;
-	}
-	.search-table td{
-		padding-right: 13px	;
+	.search-table{
+		display: none;
 	}
 	.wide-button-style {
 		width: 50%;
@@ -229,5 +240,8 @@ html, body{
 	.wide-wrap{
 		margin-left: 15px;
 		padding-left: 0;
+	}
+		.for-mobile{
+		display: block;
 	}
 }	
